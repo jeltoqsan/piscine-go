@@ -1,2 +1,2 @@
-echo Hello, jeltoqsan
+echo Hello jeltoqsan!
 
