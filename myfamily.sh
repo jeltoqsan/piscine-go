@@ -1,1 +1,1 @@
-curl -s 'https://raw.githubusercontent.com/kigiri/superhero-api/master/api/all.json' | jq ".[] | select (.id==$HERO_ID)" | grep 'relatives' | cut -d'"' -f4
+curl -s 'https://raw.githubusercontent.com/kigiri/superhero-api/master/api/all.json' | jq '.[$HERO_ID].name'
