@@ -1,1 +1,1 @@
-ls -A -m -t -p
+ls -A -m -p -t | tr -d "[:space:]"
