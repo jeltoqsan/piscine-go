@@ -4,25 +4,23 @@ import "github.com/01-edu/z01"
 
 func PrintComb2() {
 
-	for t := '0'; t <= '9'; t++ {
-		for o := '0'; o <= '9'; o++ {
-			q := 0 + 1
-			for p := t; p <= '9'; p++ {
-				for q := o; q <= '9'; q++ {
-					z01.PrintRune((t))
-					z01.PrintRune((o))
+	for a := '0'; a <= '9'; a++ {
+		for b := '0'; b <= '9'; b++ {
+			for c := a; c <= '9'; c++ {
+				for d := b + 1; d <= '9'; d++ {
+					z01.PrintRune((a))
+					z01.PrintRune((b))
 					z01.PrintRune(' ')
-					z01.PrintRune((p))
-					z01.PrintRune((q))
+					z01.PrintRune((c))
+					z01.PrintRune((d))
 
-					if t < '9' || o < '8' || p < '9' || q < '9' {
+					if a < '9' || b < '8' || c < '9' || d < '9' {
 
 						z01.PrintRune(',')
 						z01.PrintRune(' ')
 					}
 
 				}
-				q = '0'
 			}
 
 		}
