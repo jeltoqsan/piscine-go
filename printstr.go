@@ -1,8 +1,9 @@
-package piscine 
+package piscine
 
-import "github.com/01-edu/z01"
+import "fmt"
 
 func PrintStr(str string) {
-	for _, x := range string {
+	for _, x := range str {
 		fmt.Print(string(x))
+	}
 }
