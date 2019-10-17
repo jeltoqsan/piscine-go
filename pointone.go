@@ -1,4 +1,4 @@
-package piscine
+package point0ne
 
 func PointOne(n *int) { // в функции PointOne n - указывает на int
 	*n = *n + 1
