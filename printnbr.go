@@ -5,7 +5,7 @@ import "github.com/01-edu/z01"
 func PrintNbr(n int)
 	z := 0
 	if n == 0 {
-		z01.PrintRune(w)
+		z01.PrintRune(z)
 		return
 	}
 	for j := 1; j <= n%10; j++ {
