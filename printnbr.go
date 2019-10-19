@@ -3,22 +3,21 @@ package piscine
 import "github.com/01-edu/z01"
 
 func PrintNbr(n int)
-
-	w := '0'
+	z := 0
 	if n == 0 {
 		z01.PrintRune(w)
 		return
 	}
 	for j := 1; j <= n%10; j++ {
-		w++
+		z++
 	}
 	for j := -1; j >= n%10; j-- {
-		w++
+		z++
 	}
 	if n/10 != 0 {
 		PrintNbr(n / 10)
 	}
-	z01.PrintRune(w)
+	z01.PrintRune(z)
 	return
 }
 func PrintNbr(x int) {
@@ -26,4 +25,4 @@ func PrintNbr(x int) {
 		z01.PrintRune('-')
 	}
 	PrintNbr(x)
-
+}
