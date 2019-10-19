@@ -1,0 +1,1 @@
+ls -A -m -p -t | sed 's/ //g' #tr -d "[:space:]
