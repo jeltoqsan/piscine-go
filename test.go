@@ -1,4 +1,6 @@
-package piscine
+package main
+
+import "fmt"
 
 func RecursivePower(nb int, power int) int {
 	if power > 0 {
@@ -8,4 +10,10 @@ func RecursivePower(nb int, power int) int {
 	} else {
 		return 0
 	}
+}
+
+func main() {
+	arg1 := 4
+	arg2 := 3
+	fmt.Println(piscine.RecursivePower(arg1, arg2))
 }
