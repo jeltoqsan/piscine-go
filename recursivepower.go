@@ -1,4 +1,4 @@
-package main
+package student
 
 func RecursivePower(nb int, power int) int {
 	if power > 0 {
