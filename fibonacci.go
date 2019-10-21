@@ -1,8 +1,8 @@
-package fib
+package piscine
 
-func Fibonacci(n uint) uint {
-	if n <= 1 {
-		return n
+func Fibonacci(index int) int {
+	if index <= 1 {
+		return index
 	}
-	return Fibonacci(n-1) + Fibonacci(n-2)
+	return Fibonacci(index-1) + Fibonacci(index-2)
 }
