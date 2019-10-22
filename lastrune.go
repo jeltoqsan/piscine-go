@@ -4,7 +4,7 @@ package piscine
 
 import "github.com/01-edu/z01"*/
 
-func FirstRune(s string) rune {
+func LastRune(s string) rune {
 	var a rune
 	for _, z := range s {
 		a = z
