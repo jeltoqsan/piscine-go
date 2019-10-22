@@ -16,16 +16,16 @@ func PrintNbr(n int) {
 		i++
 	}
 	if n/10 != 0 {
-		PrintNbr(n / 10)
+		PrintRune(n / 10)
 	}
 	z01.PrintRune(i)
 	return
 }
 
-func PrintNbr(n int) {
+func PrintRune(n int) {
 
 	if n < 0 {
 		z01.PrintRune('-')
 	}
-	PrintNum(n)
+	PrintRune(n)
 }
