@@ -1,5 +1,8 @@
-//package piscine
-package main
+package piscine
+
+//package main
+
+//import "github.com/01-edu/z01"
 
 func FirstRune(s string) rune {
 	var a rune
