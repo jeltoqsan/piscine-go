@@ -13,6 +13,9 @@ func PrintNbrInOrder(n int) {
 	for j := 1; j <= n%10; j++ {
 		i++
 	}
+	for j := -1; j >= n%10; j-- {
+		i++
+	}
 	if n/10 != 0 {
 		PrintNbrInOrder(n / 10)
 	}
