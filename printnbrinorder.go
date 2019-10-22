@@ -1,26 +1,45 @@
-package piscine
-
 //package main
+package piscine
 
 import "github.com/01-edu/z01"
 
+func SortInteger(table []int) {
+
+	sort := 0
+	for i := range table {
+		sort = i
+	}
+
+	index := 1
+	for index != 0 {
+		index = 0
+		for i, j := 0, 1; j <= sort; i, j = i+1, j+1 {
+			if table[i] > table[j] {
+				table[i], table[j] = table[j], table[i]
+				index++
+			}
+		}
+	}
+}
+
 func PrintNbrInOrder(n int) {
-	i := '0'
+	if n < 0 {
+		return
+	}
 	if n == 0 {
 		z01.PrintRune('0')
 		return
 	}
-	for j := 1; j <= n%10; j++ {
-		i++
+	arr := []int{}
+
+	for i := n; i > 0; i /= 10 {
+		arr = append(arr, i%10)
 	}
-	for j := -1; j >= n%10; j-- {
-		i++
+	SortInteger(arr)
+
+	for _, nb := range arr {
+		z01.PrintRune(rune(nb + 48))
 	}
-	if n/10 != 0 {
-		PrintNbrInOrder(n / 10)
-	}
-	z01.PrintRune(i)
-	return
 }
 
 /*func main() {
