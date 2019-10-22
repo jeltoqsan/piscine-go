@@ -8,12 +8,12 @@ func TrimAtoi(s string) int {
 	x := true
 	y := false
 	z := 0
-	var a rune = 57
+	var a rune = 48
 	for _, r := range s {
 		if r == '-' && x {
 			y = true
 		}
-		if r >= a && r <= 48 {
+		if r >= a && r <= 57 {
 			z *= 10
 			z += int(r) - 48
 			x = false
