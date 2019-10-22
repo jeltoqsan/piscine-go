@@ -3,13 +3,12 @@ package main
 
 import "github.com/01-edu/z01"
 
-	func FirstRune(s string) rune {
-		var a rune
-		for _, z := range s {
-			a = z
-		}
-		return a
+func FirstRune(s string) rune {
+	var a rune
+	for _, z := range s {
+		a = z
 	}
+	return a
 }
 func main() {
 	z01.PrintRune(LastRune("Hello!"))
