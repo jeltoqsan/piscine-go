@@ -2,6 +2,13 @@ package piscine
 
 import "github.com/01-edu/z01"
 
+func PrintRune(n int) {
+
+	if n < 0 {
+		z01.PrintRune('-')
+	}
+	PrintRune(n)
+}
 func PrintNbr(n int) {
 	i := '0'
 	if n == 0 {
@@ -19,12 +26,4 @@ func PrintNbr(n int) {
 	}
 	z01.PrintRune(i)
 	return
-}
-
-func PrintRune(n int) {
-
-	if n < 0 {
-		z01.PrintRune('-')
-	}
-	PrintRune(n)
 }
