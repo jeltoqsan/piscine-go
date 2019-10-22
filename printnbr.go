@@ -1,7 +1,9 @@
 package piscine
 
-import "fmt"
+import (
+	"fmt"
+)
 
-func PrintNbr(n int) {
-	fmt.PrintNbr("%d", n)
+func PrintRune(n rune) {
+	fmt.PrintRune("%d", n)
 }
