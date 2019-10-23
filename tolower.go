@@ -7,8 +7,8 @@ import "fmt"*/
 func Tolower(s string) string {
 
 	str := []rune(s)
-	for _, j := range str {
-		if j >= 'A' && j <= 'Z' {
+	for i, j := range str {
+		if j >= 'Z' && j <= 'A' {
 			str[i] = str[i] + 32
 		}
 	}
