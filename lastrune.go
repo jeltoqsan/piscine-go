@@ -5,12 +5,16 @@ package piscine
 import "github.com/01-edu/z01"*/
 
 func LastRune(s string) rune {
+	result := []rune(s)
+	return result[len(result)-1]
+
+/*func LastRune(s string) rune {
 	var a rune
 	for _, z := range s {
 		a = z
 	}
 	return a
-}
+}*/
 
 /*func main() {
 z01.PrintRune(LastRune("Hello!"))
