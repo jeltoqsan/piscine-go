@@ -1,16 +1,23 @@
 package piscine
 
-//package main
+/*package main
 
-//import "github.com/01-edu/z01"
+import "github.com/01-edu/z01"*/
 
 func FirstRune(s string) rune {
+	for _, z := range s {
+		return z
+	}
+	return 1
+}
+
+/*func FirstRune(s string) rune {
 	var a rune
 	for _, z := range s {
 		return z
 	}
 	return a
-}
+}*/
 
 /*func main() {
 	z01.PrintRune(FirstRune("Hello!"))
