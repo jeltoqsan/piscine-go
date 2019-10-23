@@ -2,7 +2,7 @@
 
 import "fmt"*/
 
-//package piscine
+package piscine
 
 func IsAlpha(str string) bool {
 	for _, r := range str {
