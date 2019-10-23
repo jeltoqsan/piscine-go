@@ -6,11 +6,11 @@ import "fmt"*/
 
 func IsNumeric(str string) bool {
 	for _, r := range str {
-		if r < '0' || r > '9' {
+		if !nb(r) {
 			return false
 		}
-		return true
 	}
+	return true
 }
 
 /*func main() {
