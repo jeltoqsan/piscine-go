@@ -1,9 +1,5 @@
 package piscine
 
-/*package main
-
-import "fmt"*/
-
 func Tolower(s string) string {
 
 	str := []rune(s)
@@ -14,7 +10,3 @@ func Tolower(s string) string {
 	}
 	return string(str)
 }
-
-/*func main() {
-	fmt.Println(ToLower("Hello! How are you?"))
-}*/
