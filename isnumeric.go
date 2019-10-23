@@ -4,12 +4,13 @@ package piscine
 
 import "fmt"*/
 
-func IsNumeric(str string) bool { 
-	for _, r := range str { 
-		if r < '0' || r > '9' { 
-			return false 
-		} 
-	} return true
+func IsNumeric(str string) bool {
+	for _, r := range str {
+		if r < '0' || r > '9' {
+			return false
+		}
+		return true
+	}
 }
 
 /*func main() {
