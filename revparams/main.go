@@ -7,13 +7,13 @@ import (
 )
 
 func main() {
-	counter := 0
-	for i := range os.Args {
-		counter = i
+	x := 0
+	for y := range os.Args {
+		x = y
 	}
-	for i := counter; i > 0; i = i - 1 {
-		for _, r := range os.Args[i] {
-			z01.PrintRune(r)
+	for y := x; y > 0; y = y - 1 {
+		for _, z := range os.Args[y] {
+			z01.PrintRune(z)
 		}
 		z01.PrintRune(10)
 	}
