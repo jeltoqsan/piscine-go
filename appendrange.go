@@ -1,16 +1,23 @@
-package main
+package piscine
 
-import "fmt"
+/*package main
+
+import "fmt"*/
 
 func AppendRange(min, max int) []int {
-	x := []int(nil)
-	for i := min; i < max; i = i + 1 {
-		x = append(x, i)
+	if max <= min {
+		return nil
 	}
-	return x
+
+	var result []int
+	for i := min; i < max; i++ {
+		result = append(result, i)
+	}
+
+	return result
 }
 
-func main() {
+/*func main() {
 	fmt.Println(AppendRange(5, 10))
 	fmt.Println(AppendRange(10, 5))
-}
+}*/
