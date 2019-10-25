@@ -1,7 +1,8 @@
-//package piscine
-package main
+package piscine
 
-import "fmt"
+/*package main
+
+import "fmt"*/
 
 func MakeRange(min, max int) []int {
 	var nb []int
@@ -16,7 +17,7 @@ func MakeRange(min, max int) []int {
 
 }
 
-func main() {
+/*func main() {
 	fmt.Println(MakeRange(5, 10))
 	fmt.Println(MakeRange(10, 5))
-}
+}*/
