@@ -1,7 +1,8 @@
-//package piscine
-package main
+package piscine
 
-import "fmt"
+/*package main
+
+import "fmt"*/
 
 func SplitWhiteSpaces(str string) []string {
 	counter := 0
@@ -40,7 +41,7 @@ func SplitWhiteSpaces(str string) []string {
 	return res2
 }
 
-func main() {
+/*func main() {
 	str := "Hello how are you?"
 	fmt.Println(SplitWhiteSpaces(str))
-}
+}*/
