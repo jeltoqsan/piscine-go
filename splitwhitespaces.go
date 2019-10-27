@@ -6,16 +6,16 @@ import "fmt"*/
 
 func SplitWhiteSpaces(str string) []string {
 	counter := 0
-	for _, r := range str {
-		if r == ' ' || r == '\n' || r == '\t' {
+	for _, z := range str {
+		if z == ' ' || z == '\n' || z == '\t' {
 			counter++
 		}
 	}
 	res := make([]string, counter+1)
 	j := 0
 	last := 0
-	for i, r := range str {
-		if r == ' ' || r == '\n' || r == '\t' {
+	for i, z := range str {
+		if z == ' ' || z == '\n' || z == '\t' {
 			if str[last:i] != "" {
 				res[j] = str[last:i]
 				j++
@@ -25,16 +25,16 @@ func SplitWhiteSpaces(str string) []string {
 	}
 	res[j] = str[last:]
 	c := 0
-	for _, r := range res {
-		if r != "" {
+	for _, z := range res {
+		if z != "" {
 			c++
 		}
 	}
 	res2 := make([]string, c)
 	r := 0
-	for _, r := range res {
-		if r != "" {
-			res2[r] = r
+	for _, z := range res {
+		if z != "" {
+			res2[r] = z
 			r++
 		}
 	}
