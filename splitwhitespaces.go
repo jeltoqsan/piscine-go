@@ -7,7 +7,7 @@ func SplitWhiteSpaces(str string) []string {
 	counter := 0
 	for _, r := range str {
 		if r == ' ' || r == '\n' || r == '\t' {
-			counter+
+			counter++
 		}
 	}
 	res := make([]string, counter+1)
