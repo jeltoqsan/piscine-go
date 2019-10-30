@@ -6,10 +6,10 @@ package piscine
 
 func NRune(s string, n int) rune {
 	x := 0
-	for _, z := range s {
+	for _, char := range s {
 		x = x + 1
 		if x == n {
-			return z
+			return char
 		}
 	}
 	return 0

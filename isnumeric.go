@@ -5,9 +5,9 @@ package piscine
 import "fmt"*/
 
 func IsNumeric(str string) bool {
-	for i := range str {
-		if str[i] >= 0 && str[i] <= 47 ||
-			str[i] >= 58 && str[i] <= 127 {
+	for r := range str {
+		if str[r] >= 0 && str[r] <= 47 ||
+			str[r] >= 58 && str[r] <= 127 {
 			return false
 		}
 	}

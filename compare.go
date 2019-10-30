@@ -1,9 +1,5 @@
 package piscine
 
-/*package main
-
-import "fmt"*/
-
 func Compare(a, b string) int {
 	if a > b {
 		return 1

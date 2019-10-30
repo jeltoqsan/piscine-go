@@ -5,8 +5,8 @@ package piscine
 import "github.com/01-edu/z01"*/
 
 func FirstRune(s string) rune {
-	for _, z := range s {
-		return z
+	for _, char := range s {
+		return char
 	}
 	return 1
 }
