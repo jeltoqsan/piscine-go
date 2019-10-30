@@ -1,41 +1,29 @@
-//package piscine
-package main
+package piscine
 
-import "fmt"
+/*package main
+
+import "fmt"*/
 
 func Abort(a, b, c, d, e int) int {
-	table := []int{a, b, c, d, e}
-
-	for i := 0; i < len(table)-1; i++ {
-		for j := 0; j < len(table)-1; j++ {
-			if table[j] > table[j+1] {
-				index := table[j]
-				table[j] = table[j+1]
-				table[j+1] = index
+	var nb [5]int
+	nb[0] = a
+	nb[1] = b
+	nb[2] = c
+	nb[3] = d
+	nb[4] = e
+	for i := 0; i < 4; i++ {
+		for j := i + 1; j < 5; j++ {
+			if nb[i] > nb[j] {
+				k := nb[i]
+				nb[i] = nb[j]
+				nb[j] = k
 			}
 		}
 	}
-	return table[2]
-}
-func main() {
-	middle := Abort(2, 3, 8, 5, 7)
-	fmt.Println(middle)
+	return nb[2]
 }
 
-/*
-package main
-
-import (
-	"fmt"
-	"sort"
-)
-
-func Abort(a, b, c, d, e int) int { // получает 5 int и выводит среднее число
-	arg := []int{a, b, c, d, e}
-	sort.Ints(arg)
-	return arg[2]
-}
-func main() {
+/*func main() {
 	middle := Abort(2, 3, 8, 5, 7)
 	fmt.Println(middle)
 }*/
