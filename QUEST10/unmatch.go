@@ -5,12 +5,12 @@ package piscine
 import 	"fmt"*/
 
 func Unmatch(arr []int) int {
-	arrLen := 0
+	arrLn := 0
 	for i := range arr {
-		arrLen = i + 1
+		arrLn = i + 1
 	}
-	for i := 0; i < arrLen; i++ {
-		for j := i + 1; j < arrLen; j++ {
+	for i := 0; i < arrLn; i++ {
+		for j := i + 1; j < arrLn; j++ {
 			if arr[i] == arr[j] {
 				arr[i], arr[j] = -1, -1
 			}
