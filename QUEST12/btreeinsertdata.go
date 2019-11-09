@@ -1,9 +1,5 @@
 package piscine
 
-/*package main
-
-import "fmt"*/
-
 type TreeNode struct {
 	Left, Right, Parent *TreeNode
 	Data                string
