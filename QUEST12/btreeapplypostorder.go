@@ -40,6 +40,4 @@ func BTreeApplyPostorder(root *TreeNode, f func(...interface{}) (int, error)) {
 	BTreeInsertData(root, "1")
 	BTreeInsertData(root, "7")
 	BTreeInsertData(root, "5")
-	BTreeApplyPostorder(root, fmt.Println)
-
-}*/
+	BTreeApplyPostorder(root, fmt.Println)*/
