@@ -1,7 +1,6 @@
-//package piscine
 package main
 
-import "github.com/01-edu/z01"
+import . "github.com/01-edu/z01"
 
 func Rot14(str string) string {
 	nb := rune(14)
@@ -31,7 +30,7 @@ func main() {
 	arrayRune := []rune(result)
 
 	for _, s := range arrayRune {
-		z01.PrintRune(s)
+		PrintRune(s)
 	}
-	z01.PrintRune('\n')
+	PrintRune('\n')
 }
