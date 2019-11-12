@@ -1,4 +1,4 @@
-package piscine
+package main
 
 type TreeNode struct {
 	Left, Right, Parent *TreeNode
@@ -21,7 +21,7 @@ func BTreeInsertData(root *TreeNode, data string) *TreeNode {
 		root.Right.Parent = root
 	}
 	return root
-}*/
+}
 
 func BTreeApplyInorder(root *TreeNode, f func(...interface{}) (int, error)) {
 	if root == nil {
@@ -32,11 +32,11 @@ func BTreeApplyInorder(root *TreeNode, f func(...interface{}) (int, error)) {
 	BTreeApplyInorder(root.Right, f)
 }
 
-/*func main() {
+func main() {
 	root := &TreeNode{Data: "4"}
 	BTreeInsertData(root, "1")
 	BTreeInsertData(root, "7")
 	BTreeInsertData(root, "5")
 	BTreeApplyInorder(root, fmt.Println)
 
-}*/
+}
