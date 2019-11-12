@@ -5,20 +5,20 @@ package piscine
 import "fmt"*/
 
 func BasicAtoi2(s string) int {
-	var res = 0
-	for _, val := range s {
-		if val >= '0' && val <= '9' {
+	var x = 0
+	for _, char := range s {
+		if char >= '0' && char <= '9' {
 			dig := 0
-			for i := '1'; i <= val; i++ {
+			for i := '1'; i <= char; i++ {
 				dig++
 			}
-			res = res*10 + dig
+			x = x*10 + dig
 		} else {
-			res = 0
-			return res
+			x = 0
+			return x
 		}
 	}
-	return res
+	return x
 }
 
 /*func main() {
