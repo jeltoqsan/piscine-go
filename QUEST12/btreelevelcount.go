@@ -1,11 +1,13 @@
-package main
+package piscine
+
+/*package main
 
 import "fmt"
 
 type TreeNode struct {
 	Left, Right, Parent *TreeNode
 	Data                string
-}
+}*/
 
 func BTreeLevelCount(root *TreeNode) int {
 	x := 1
@@ -26,7 +28,7 @@ func BTreeLevelCount(root *TreeNode) int {
 	}
 }
 
-func main() {
+/*func main() {
 	root := &TreeNode{Data: "4"}
 	BTreeInsertData(root, "1")
 	BTreeInsertData(root, "7")
@@ -44,4 +46,4 @@ func BTreeInsertData(root *TreeNode, data string) *TreeNode {
 		root.Right = BTreeInsertData(root.Right, data)
 	}
 	return root
-}
+}*/
