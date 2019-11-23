@@ -1,8 +1,6 @@
-package piscine
+package main
 
-/*package main
-
-import "fmt"*/
+import "fmt"
 
 type NodeL struct {
 	Data interface{}
@@ -28,7 +26,7 @@ func ListPushBack(l *List, data interface{}) {
 
 }
 
-/*func main() {
+func main() {
 
 	link := &List{}
 
@@ -40,4 +38,4 @@ func ListPushBack(l *List, data interface{}) {
 		fmt.Println(link.Head.Data)
 		link.Head = link.Head.Next
 	}
-}*/
+}
